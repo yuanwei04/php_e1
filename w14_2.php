@@ -61,7 +61,7 @@ if (isset($_POST['submit'])){
 	//5 marks for validating phone number with RegEx
 	if (!empty($_POST['phone'])){//1m
 		$pattern="/^\+60[0-9]{7,10}$/";//1m
-		if (preg_match($pattern, $_POST['phone'])//1m
+		if (preg_match($pattern, $_POST['phone']))//1m
 			$phone=$_POST['phone'];//0.5m
 		else
 			$phone="Phone number should begin with +60, followed by 7 to 10 numbers.";//0.5m
